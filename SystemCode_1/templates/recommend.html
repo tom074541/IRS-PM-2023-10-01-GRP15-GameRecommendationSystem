@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Recommendation System - Game Name</title>
+</head>
+<body>
+    <h1>Game Recommendation based on Game Name</h1>
+    <h3>Input Game Name: {{ game_name }}</h3>
+    <h3>Recommended Games:</h3>
+    <ul>
+        {% for game in recommended_games %}
+        <li>{{ game }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

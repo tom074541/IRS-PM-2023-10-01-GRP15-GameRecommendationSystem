@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index HTML</title>
+    <style>
+        body {
+            background-image: url("image/index.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Game Recommendation System</h1>
+    <h1>Please enter your favourite game or preferred game genre</h1>
+    <form action="/recommend" method="POST">
+        <label for="game_name">Enter a game name:</label>
+        <input type="text" id="game_name" name="game_name" required>
+        <input type="submit" value="Recommend based on Game Name">
+    </form>
+    <br>
+    <form action="/recommend_genre" method="POST">
+        <label for="genre">Enter a game genre:</label>
+        <input type="text" id="genre" name="genre" required>
+        <input type="submit" value="Recommend based on Genre">
+    </form>
+    <h2>My name is Bill. I am the Service Chatbot for this recommendation system, if you have any questions, please feel free to ask.</h2>
+    <div>
+        <p>Enter your message:</p>
+        <form action="/chatbot" method="post">
+            <input type="text" name="user_input" placeholder="Type your message" required>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
