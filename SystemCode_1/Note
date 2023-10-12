@@ -1,2 +1,3 @@
+The system can make recommendation based on input including game name and game genre, there is also a Service Chatbot.
 In order to run App.py, first obtain similarity.pkl by running SCS.ipynb, obtain vectors.pkl and cv.pkl from CSC_Tag.ipynb. Remember to change the file path.
 Still trying to figure out how to upload game.csv and game.pkl....
